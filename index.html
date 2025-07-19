@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WingSky</title>
+    <link rel="stylesheet" href="css.css">
+     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="home">
+        <div class="nav">
+            <h1>WishTrip</h1>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#journey">JOURNEY</a></li>
+                <li><a href="#more">MORE</a></li>
+                <li><a href="#last-page">CONTACT</a></li>
+            </ul>
+            <button onclick="openbooking()">BOOK NOW</button>
+        </div>
+        <div class="content">
+
+        
+
+            <div class="booking">
+               <div class="close-btn" ><i class="fa-solid fa-xmark" onclick="closebooking()"></i></div>
+                <form class="register" onsubmit="return formval()" action="">
+                    <h2>Register Now</h2>
+               <input type="text" placeholder="Enter Your Full Name" class="inpt" id="username">
+               <p class="error" id="usernamew"> </p>
+               <input type="text" placeholder="Enter Your Email" class="inpt" id="email">
+               <p class="error" id="emailw"></p>
+               <input type="password" placeholder="Create Password" class="inpt" id="password">
+               <p class="error" id="passwordw"></p>
+               <input type="password" placeholder="Confirm Password" class="inpt" id="cpassword">
+               <p class="error" id="cpasswordw"></p>
+
+               <div class="tick"><input type="checkbox" class="check-box"><p>By Signing up, you agree to our <a href="#">Terms of Service, Privacy Policy.</a></p></div>
+               <button class="inpt">Register</button>
+               
+                </form>
+            </div>
+
+
+
+
+            <div class="sky-background">
+                <img src="plane-removebg-preview.png">
+                <div class="title">ELEVATE YOUR TRAVEL JOURNEY</div>
+                <div class="heading">
+                    <h1>EXPERIENCE THE MAGIC OF FLIGHT!</h1>
+                </div>
+                <div class="book-btn"><button onclick="openbooking()">BOOK A TRIP NOW</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    
+<section class="about" id="about">
+    <div class="heading-name">
+    <h1>POPULAR DESTINATION</h1>
+    <div class="heading-head">DISCOVER THE MOST LOVED DESTINATION AROUND THE GLOBLE</div>
+    </div>
+
+
+    <div class="about-content">
+       <div class="about-content-box">
+        <img src="1st-img.jpg">
+        <div class="name">Tradition and Futurism</div>
+        <div class="rating">New York, USA</div>
+        <div class="rate"><i class="fa-solid fa-star"></i>4.3</div>
+       </div>
+
+       <div class="about-content-box">
+        <img src="2nd-img.jpg">
+        <div class="name">Island of Gods</div>
+        <div class="rating">Bali, Indonesia</div>
+        <div class="rate"><i class="fa-solid fa-star"></i>4.2</div>
+       </div>
+
+       <div class="about-content-box">
+        <img src="3rth-img.jpg" >
+        <div class="name">Serene Beach</div>
+        <div class="rating">Thailand, Aisa</div>
+        <div class="rate"><i class="fa-solid fa-star"></i>4.8</div>
+       </div>
+    </div>
+</section>
+
+<div class="journey" id="journey">
+    <div class="journey-heading">
+        <h1>Journey To The Sky Made Simple!</h1>
+        <div class="jr-discription">Effortless Planing  For Your Next Adventure</div>
+    </div>
+ <div class="journey-content">
+       <div class="jr-box">
+        <div class="jr-box-logo"><i class="fa-solid fa-paper-plane"></i></div>
+        <div class="jr-box-ds">Telegram Booking Available</div>
+        <div class="hidden-box">Contact Us on Telegram for the booking.Experience the Faster & safe Booking.</div>
+       </div>
+       <div class="jr-box">
+        <div class="jr-box-logo"><i class="fa-solid fa-leaf"></i></i></div>
+        <div class="jr-box-ds">Great Offers & Disscounts</div>
+        <div class="hidden-box">We Give Exclusive Offers & Very Best Offers that in your Budget.</div>
+       </div>
+       <div class="jr-box">
+        <div class="jr-box-logo"><i class="fa-solid fa-feather"></i></div>
+        <div class="jr-box-ds">Seamless Booking Process</div>
+        <div class="hidden-box">You Can Book Your Favoraite destination From Anywere</div>
+       </div>
+       
+ </div>
+</div>
+
+<div class="more" id="more">
+    <div class="more-heading">
+        <h1>Discover The World From Above</h1>
+    <div class="more-head">Experience Breathing Views and Unique Perspectives</div>
+    </div>
+    <div class="more-content">
+           <div class="more-box">
+            <div class="more-logo"><i class="fa-solid fa-spa"></i></div>
+              <div class="more-title">Aerial Cityscapes</div>
+              <div class="more-dis">Witness the architectural marvels and bustling streets from bird's-eye view, offering a unique perspective.</div>
+           </div>
+           <div class="more-box">
+              <div class="more-logo"><i class="fa-solid fa-ship"></i></div>
+              <div class="more-title">Coastal Wonders</div>
+              <div class="more-dis">Fly over pristine coastlines and turquoise waters, revealing hidden coves and vibrant coral reefs.</div>
+           </div>
+           <div class="more-box">
+              <div class="more-logo"><i class="fa-solid fa-mountain-sun"></i></div>
+              <div class="more-title">Historic Landmarks</div>
+              <div class="more-dis">Observe the grandeur of ancient castles and other significant sites in a way that ground tours can't offer.</div>
+           </div>
+    </div>
+</div>
+
+<div class="last-page" id="last-page">
+    <div class="lp-box">
+        <div class="lp-name">WishTrip</div>
+        <div class="lp-dis">Explore the world with ease and excitement through our comprehensive travel platform. Your journey begins here, where seamless planning meets unforgettable experiences
+       </div>
+    <div class="lp-icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+       </div>
+    </div>
+
+    <div class="lp-box">
+        <div class="lp-name">Quick Links</div>
+        <div class="lp-dis">
+            <div class="link">Home</div>
+            <div class="link">Flights</div>
+            <div class="link">Hotels</div>
+            <div class="link">Cruise</div>
+        </div>
+    </div>
+
+    <div class="lp-box">
+        <div class="lp-name">Contact Us</div>
+        <div class="lp-dis"> 
+            <div class="add"><a href="#">+91 8308321027</a></div>
+            <div class="add">WishTrip@gmail.com</div>
+            <div class="add">WishTrip Travels, Maharastra</div>
+        </div>
+    </div>
+
+    <div class="lp-box">
+        <div class="lp-name">Subscribe</div>
+        <div class="lp-dis"> 
+            <input type="text" placeholder="Enter Your Email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+    
+</div>
+
+
+<script>
+
+   function openbooking(){
+  var booking = document.querySelector('.booking');
+   booking.style.display = "flex";
+   }
+   function closebooking(){
+  var booking = document.querySelector('.booking');
+   booking.style.display = "none";
+   }
+
+
+
+
+
+
+
+
+
+ function formval(){
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var cpassword = document.getElementById('cpassword').value;
+
+    if(username==""){
+        document.getElementById('usernamew').innerHTML='Enter Full Name';
+        return false;
+    }
+    else if(email==""){
+         document.getElementById('emailw').innerHTML='Enter Email';
+        return false;
+    }
+    else if(password==""){
+         document.getElementById('passwordw').innerHTML='Enter password';
+        return false;
+    }
+    else if(cpassword==""){
+         document.getElementById('cpasswordw').innerHTML='Confirm Passord';
+        return false;
+    }
+    else{
+        alert('Your Registeration Sucessful');
+        return true;
+    }
+    
+ }
+
+
+
+
+
+
+</script>
+</body>
+</html>
