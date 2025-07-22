@@ -4,7 +4,8 @@
 }
 body{
     font-family: arial;
-    scroll-behavior: smooth;      
+    scroll-behavior: smooth; 
+    background-color:skyblue;
 }
 body::selection{
     color: ;
