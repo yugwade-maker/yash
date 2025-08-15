@@ -586,6 +586,9 @@ body::-webkit-scrollbar{
     row-gap: 10px;
     padding-bottom: 500px;
 }
+.about-content-box{
+   margin-left: -60px;
+}
 .about-content-box img{
     width: 300px;
     height: 200px;
@@ -672,3 +675,4 @@ body::-webkit-scrollbar{
     margin-top: 100px;
 }
 }
+
